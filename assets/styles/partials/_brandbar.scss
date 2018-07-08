@@ -1,0 +1,39 @@
+header.brandbar {
+  & {
+    background-image: url("images/brandbar.png");
+    background-size: auto 40px;
+    color: $light-accent;
+    height: $brandbar-height;
+    width: 100%;
+    max-height: 40px;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &,
+  & .brand-width {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & a {
+    color: $light-accent;
+  }
+
+  .overlay {
+    @include alpha-attribute('background-color', rgba($dark-shade, 0.80), $dark-shade);
+    height: 100%;
+    width: 100%;
+  }
+
+  .site-logo img {
+    height: 38px;
+  }
+
+  .gateway {
+    margin-top: 3px;
+  }
+}

@@ -1,0 +1,37 @@
+/* Color Palette */
+
+//$main-color: #52a6da;
+$main-color: #328bcd;
+$light-accent: #e1e86e;
+$dark-accent: #3d4389;
+$light-shade: #45eee7;
+$dark-shade: #361f61;
+
+/* Sizes */
+$brand-width: 1000px;
+$brandbar-height: 40px;
+$home-hero-width: 1500px;
+$header-height: $brandbar-height;
+$rem: 18px;
+
+/* Breakpoints */
+$break0: 420px; // Special sub-mobile cases
+$break1: 600px; // Catch phones/phablets (default, most of the time...)
+$break2: 800px; // Catch small tablets
+$break3: 1000px; // Catch full displays/large tablets
+
+$mobile-small: 240px;
+$mobile-large: 320px;
+$tablet-small: 480px;
+$tablet-large: 768px;
+$screen-small: 1024px;
+$screen-large: 1280px;
+
+/* Mixins */
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}

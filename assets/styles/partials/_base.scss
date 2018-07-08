@@ -1,0 +1,69 @@
+html {
+	font: $rem 'Oswald', arial, sans-serif;
+	color: $dark-shade;
+}
+
+body {
+	background-color: $light-shade;
+}
+
+a {
+	text-decoration: none;
+	color: $dark-accent;
+}
+
+.brand-width {
+	width: $brand-width;
+	max-width: 100vw;
+	margin: 0 auto;
+}
+
+.full-width {
+	width: 100vw;
+}
+
+.body {
+	height: 100vh;
+	background-color: $light-shade;
+}
+
+.main-grid {
+  height: 100vh;
+	position: relative;
+  top: $header-height;
+}
+
+.chart {
+	//background-color: $light-shade;
+	margin: 1rem;
+}
+
+.chart > * > .entry{
+	background-color: $main-color;
+}
+
+.top-ten-grid {
+	min-height: 200px;
+}
+
+.second-tier-grid {
+	//margin-top: 5.5rem;
+}
+
+.selection {
+	background-color: $dark-shade;
+}
+
+.chart-heading:first-child {
+	margin-top: 0;
+}
+
+.selection > * {
+	color: $light-shade;
+	margin-left: .75rem;
+}
+
+.selection > h1 {
+	text-align: center;
+	margin-left: 0;
+}
