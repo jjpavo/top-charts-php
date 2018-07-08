@@ -1,6 +1,6 @@
 {
   "name": "top_charts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A chart maker inspired by Topsters2 that allows you to create your own chart for your favorite things",
   "main": "index.js",
   "directories": {
@@ -30,6 +30,7 @@
     "grunt-cli": "^1.2.0"
   },
   "dependencies": {
+    "hoek": "^4.2.1",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0"
   }
