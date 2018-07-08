@@ -2,7 +2,7 @@
   display: grid;
 }
 
-.grid::before {
+.chart > .grid::before {
   content: '';
   width: 0;
   padding-bottom: 100%;
@@ -10,7 +10,7 @@
   grid-column: 1 / 1;
 }
 
-.grid > *:first-child {
+.chart > .grid > *:first-child {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
 }
@@ -26,7 +26,7 @@
 
 .top-ten-grid {
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr;
+	grid-template-rows: minmax(auto, 200px) minmax(auto, 200px);
   grid-gap: .5rem;
 }
 
@@ -39,13 +39,13 @@
 }
 
 .second-tier-grid {
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(10, minmax(auto, 95.3px));
+  grid-template-rows: repeat(4, minmax(auto, 95.3px));
   grid-gap: .5rem;
 }
 
 .later-tier-grid {
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(10, minmax(auto, 95.3px));
+  grid-template-rows: repeat(5, minmax(auto, 95.3px));
   grid-gap: .5rem;
 }
