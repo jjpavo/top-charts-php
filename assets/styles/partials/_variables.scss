@@ -1,11 +1,26 @@
 /* Color Palette */
 
-//$main-color: #52a6da;
-$main-color: #328bcd;
-$light-accent: #e1e86e;
-$dark-accent: #3d4389;
-$light-shade: #45eee7;
-$dark-shade: #361f61;
+// $main-color: #328bcd;
+// $light-accent: #e1e86e;
+// $dark-accent: #3A4082;
+// $light-shade: #45eee7;
+// $dark-shade: #361f61;
+
+// $main-color: #AA5647;
+// $light-accent: #A0BAC3;
+// $dark-accent: #D59130;
+// $light-shade: #F5F3F3;
+// $dark-shade: #27283C;
+
+$main-color: #9E8EC6;
+//$main-color: #BA3C7C;
+$light-accent: #EA7F9C;
+//$light-accent: #DFBC76;
+//$dark-accent: #975699;
+$dark-accent: #806DC8;
+//$dark-accent: #9D85D0;
+$light-shade: #E8EEE9;
+$dark-shade: #3B2282;
 
 /* Sizes */
 $brand-width: 1000px;
@@ -19,6 +34,11 @@ $break0: 420px; // Special sub-mobile cases
 $break1: 600px; // Catch phones/phablets (default, most of the time...)
 $break2: 800px; // Catch small tablets
 $break3: 1000px; // Catch full displays/large tablets
+
+/* Shadows */
+$shadow1: 0 .1rem .3rem rgba(0, 0, 0, 0.1);
+$shadow2: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+$shadow3: 0 .3rem 1rem rgba(0, 0, 0, 0.35);
 
 $mobile-small: 240px;
 $mobile-large: 320px;
@@ -34,4 +54,14 @@ $screen-large: 1280px;
   $solid-color: mix($opaque, $background, $percent);
   #{$attribute}: $solid-color;
   #{$attribute}: $color;
+}
+
+@mixin glow1($color1, $color2) {
+	box-shadow: 0 5px 15px rgba($color1, .4);
+	color: rgba($color2, .8);
+}
+
+/* Functions */
+@function min($a, $b) {
+  @return if($a < $b, $a, $b);
 }
