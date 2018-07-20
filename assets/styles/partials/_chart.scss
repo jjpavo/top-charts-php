@@ -1,0 +1,10 @@
+.input-row-wrap input[type="text"] {
+	height: 15px;
+	border: 1px solid $dark-accent;
+	@include alpha-attribute('background-color', rgba($main-color, 0.40), $light-shade);
+	color: $dark-shade;
+}
+
+.input-row-wrap * {
+	display: block;
+}
