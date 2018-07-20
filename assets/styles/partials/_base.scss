@@ -5,6 +5,7 @@ html {
 
 body {
 	background-color: $light-shade;
+	margin: 0;
 }
 
 a {
@@ -15,6 +16,14 @@ a {
 img {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+/* Prevent animations on load */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 .brand-width {
@@ -39,7 +48,6 @@ img {
 }
 
 .chart {
-	//background-color: $light-shade;
 	margin: 1rem;
 }
 
@@ -51,13 +59,8 @@ img {
 	max-height: none;
 }
 
-
 .top-ten-grid {
 	min-height: 200px;
-}
-
-.second-tier-grid {
-	//margin-top: 5.5rem;
 }
 
 .selection {
@@ -85,4 +88,13 @@ img {
 
 .entry {
 	overflow: hidden;
+}
+
+.imageWrapper {
+	max-width: 80%;
+	min-width: 100px;
+}
+
+.cropperWrapper {
+	max-height: 335px;
 }
