@@ -1,0 +1,37 @@
+button {
+	border: none;
+	padding: .5rem 1rem;
+	font-weight: bold;
+	font-size: inherit;
+	position: relative;
+	//border-radius: 5px;
+	text-decoration: none;
+	top: 0px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		//top: -3px;
+	}
+
+	&.light {
+		background-color: $light-accent;
+		color: $dark-shade;
+		box-shadow: $shadow2;
+
+	}
+
+	&.light:hover {
+		@include glow1($light-accent, $dark-shade);
+	}
+
+	&.dark {
+		background-color: $dark-accent;
+		color: $light-shade;
+		//box-shadow: $shadow1;
+	}
+
+	&.dark:hover {
+		//box-shadow: $shadow2;
+	}
+}
