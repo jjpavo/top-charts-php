@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Top Charts">
+  <title>Top Charts</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.min.css">
+	<!--<script src="scripts.js" type="text/javascript" async></script>-->
+	<script
+				src="https://code.jquery.com/jquery-3.3.1.min.js"
+				integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+				crossorigin="anonymous"></script>
+	<script src="croppie/croppie.js" type="text/javascript"></script>
+	<script src="images.js" type="text/javascript"></script>
+	<script src="cropping.js" type="text/javascript"></script>
+
+</head>
+<body class="preload">
+  {% if brandbar_exists %}
+    {% include 'brandbar.twig' %}
+  {% endif %}
+  <div class="content-body main-grid grid">
+    <div class="selection">
+			<h1>Top Charts</h1>
+			<input id="imageUpload" type="file" accept="image/gif, image/jpeg, image/png">
+			<div class="cropperWrapper">
+				<div id="cropper">
+
+				</div>
+			</div>
+			<button class="light" id="crop" type="button">Crop Image</button>
+			<div class="imageWrapper" id="imageWrapper">
+				<img class="uploadedImage" src="#" alt="" draggable="true" ondragstart="drag(event)">
+			</div>
+    </div>
+		{% include 'chart.twig' %}
+  </div>
+	<h1></h1>
+</body>
+</html>

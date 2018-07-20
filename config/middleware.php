@@ -1,0 +1,5 @@
+<?php
+
+// Slim middleware
+
+?>
