@@ -1,5 +1,8 @@
 # Below are resources I used to create this project that I wish to credit
 
+## Main Inspiration:
+- [Topsters](https://www.neverendingchartrendering.org/ "Topsters")
+
 ## Icons:
 - My brand icon is an edited version of Peacock by Sitara Shah from the Noun Project. The colors were changed and I added text
 
