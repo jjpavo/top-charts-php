@@ -13,3 +13,7 @@
 
 ## Javascript:
 - [Croppie](https://foliotek.github.io/Croppie/ "Croppie Github")
+- [Muuri](https://github.com/haltu/muuri "Muuri Github")
+
+
+### I'm not a perfect human being! If I made a mistake here then please notify me so I can properly credit you!
