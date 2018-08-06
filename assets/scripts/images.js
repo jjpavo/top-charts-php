@@ -22,10 +22,16 @@ $(document).ready(function() {
   handleLabel = function(entry) {
     var input = document.getElementById(entry.id + "-input");
     input.style.display = "block";
+    // Make parent divs for the muuri-grid also displayed:
+    var gridContent = input.parentElement;
+    var gridElement = gridContent.parentElement;
+    gridContent.style.display = "block";
+    gridElement.style.display = "block";
     // If the element before the label-input pair is a the number for a new row then show it.
     // previousELementSibling twice because it goes span -> label -> input.
-    if(input.previousElementSibling.previousElementSibling.tagName === "SPAN") {
-      input.previousElementSibling.previousElementSibling.style.display = "block";
+    var rowLabel = input.parentElement.parentElement.previousElementSibling.querySelector(".row-label");
+    if(rowLabel.tagName === "SPAN") {
+      rowLabel.style.display = "block";
     }
   }
 
@@ -40,6 +46,7 @@ $(document).ready(function() {
         if (event.keyCode === 13) {
           // Show label with user entry and hide text input box.
           var label = document.getElementById(event.target.id.split("-")[0] + "-label");
+
           label.style.display = "block";
 
           if(event.target.value === "") {
@@ -67,5 +74,8 @@ $(document).ready(function() {
     }
   }
 
+
+  // Removed animations on page load.
+  // No longer needed after the page loads.
   $("body").removeClass("preload");
 });

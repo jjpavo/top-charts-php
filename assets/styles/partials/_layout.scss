@@ -11,23 +11,36 @@
   position: relative;
   width: 965px;
 }
+
 .muuri-grid-item {
   display: block;
   position: absolute;
+  z-index: 1;
+}
+
+.chart .muuri-grid-item {
   width: 175px;
   height: 175px;
   margin: .5rem;
-  z-index: 1;
 }
+
+.labels .muuri-grid-item {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 .muuri-grid-item.muuri-item-dragging {
   z-index: 3;
 }
+
 .muuri-grid-item.muuri-item-releasing {
   z-index: 2;
 }
+
 .muuri-grid-item.muuri-item-hidden {
   z-index: 0;
 }
+
 .muuri-grid-item-content {
   position: relative;
   width: 100%;

@@ -1,15 +1,19 @@
-.input-row-wrap input[type="text"] {
+.labels input[type="text"] {
 	height: 15px;
 	border: 1px solid $dark-accent;
 	@include alpha-attribute('background-color', rgba($main-color, 0.40), $light-shade);
 	color: $dark-shade;
 }
 
-.input-row-wrap * {
-	display: none;
+.labels * {
+	// display: none;
+  display: block;
+}
+
+.labels {
+  width: 380px;
 }
 
 .entry-label {
-  padding-left: 1rem;
-  text-indent: -1rem;
+  white-space: nowrap;
 }
